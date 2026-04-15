@@ -1,0 +1,20 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    level: 8
+
+    paths:
+        - app
+
+    # Tighter strictness — these catch real interview-grade issues.
+    checkMissingIterableValueType: true
+    checkGenericClassInNonGenericObjectType: true
+    treatPhpDocTypesAsCertain: true
+
+    ignoreErrors:
+        # Add narrow ignores here as they come up. Resist the urge to ignore
+        # whole classes — fix the type instead.
+
+    excludePaths:
+        - app/Modules/*/Infrastructure/Persistence/Migrations/*
