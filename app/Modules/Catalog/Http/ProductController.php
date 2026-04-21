@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Modules\Catalog\Http;
 
 use App\Http\Controllers\Controller;
-use App\Modules\Catalog\Domain\Repository\ProductRepositoryPort;
+use App\Modules\Catalog\Domain\Repository\ProductRepositoryInterface;
 use App\Modules\Catalog\Http\Requests\UpsertProductRequest;
 use App\Modules\Catalog\Infrastructure\Product;
 use Illuminate\Http\JsonResponse;
@@ -14,7 +14,7 @@ use Illuminate\Http\Request;
 class ProductController extends Controller
 {
     public function __construct(
-        private ProductRepositoryPort $products,
+        private ProductRepositoryInterface $products,
     ) {}
 
     /** Public — list active products (paginated, cached). */

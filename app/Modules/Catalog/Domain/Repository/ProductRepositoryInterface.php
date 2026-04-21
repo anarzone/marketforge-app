@@ -7,7 +7,7 @@ namespace App\Modules\Catalog\Domain\Repository;
 use App\Modules\Catalog\Infrastructure\Product;
 use Illuminate\Pagination\LengthAwarePaginator;
 
-interface ProductRepositoryPort
+interface ProductRepositoryInterface
 {
     /** @return LengthAwarePaginator<int, Product> */
     public function findActiveProducts(int $page): LengthAwarePaginator;

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Modules\Catalog\Infrastructure\Repository;
 
-use App\Modules\Catalog\Domain\Repository\ProductRepositoryPort;
+use App\Modules\Catalog\Domain\Repository\ProductRepositoryInterface;
 use App\Modules\Catalog\Infrastructure\Product;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\Cache;
@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Cache;
  * Cache-aside pattern: reads populate the cache lazily, writes invalidate it.
  * The inner repository (EloquentProductRepository) never knows caching exists.
  */
-class CachedProductRepository implements ProductRepositoryPort
+class CachedProductRepository implements ProductRepositoryInterface
 {
     private const string KEY_LIST = 'products:list:page:';
 

@@ -5,11 +5,11 @@ declare(strict_types=1);
 namespace App\Modules\Catalog\Infrastructure\Repository;
 
 use App\Modules\Catalog\Domain\ProductStatus;
-use App\Modules\Catalog\Domain\Repository\ProductRepositoryPort;
+use App\Modules\Catalog\Domain\Repository\ProductRepositoryInterface;
 use App\Modules\Catalog\Infrastructure\Product;
 use Illuminate\Pagination\LengthAwarePaginator;
 
-class EloquentProductRepository implements ProductRepositoryPort
+class EloquentProductRepository implements ProductRepositoryInterface
 {
     /** @return LengthAwarePaginator<int, Product> */
     public function findActiveProducts(int $page): LengthAwarePaginator
