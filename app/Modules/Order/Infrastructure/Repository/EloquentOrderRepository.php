@@ -8,7 +8,7 @@ use App\Modules\Order\Domain\Repository\OrderRepositoryInterface;
 use App\Modules\Order\Infrastructure\Models\Order;
 use App\Modules\Order\Infrastructure\Models\OrderItem;
 use App\Modules\Order\Infrastructure\Models\SubOrder;
-use App\Modules\SharedKernel\Domain\Currency;
+use App\Modules\SharedKernel\Domain\ValueObjects\Currency;
 use Illuminate\Support\Collection;
 
 class EloquentOrderRepository implements OrderRepositoryInterface

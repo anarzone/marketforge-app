@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Modules\Order\Infrastructure\Models;
 
-use App\Modules\Order\Domain\SubOrderStatus;
-use App\Modules\SharedKernel\Domain\Currency;
+use App\Modules\Order\Domain\Enums\SubOrderStatus;
+use App\Modules\SharedKernel\Domain\ValueObjects\Currency;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;

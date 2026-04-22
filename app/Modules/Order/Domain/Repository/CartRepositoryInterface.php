@@ -6,7 +6,7 @@ namespace App\Modules\Order\Domain\Repository;
 
 use App\Modules\Order\Infrastructure\Models\Cart;
 use App\Modules\Order\Infrastructure\Models\CartItem;
-use App\Modules\SharedKernel\Domain\Currency;
+use App\Modules\SharedKernel\Domain\ValueObjects\Currency;
 
 interface CartRepositoryInterface
 {

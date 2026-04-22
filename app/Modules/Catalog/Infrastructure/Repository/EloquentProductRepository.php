@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Modules\Catalog\Infrastructure\Repository;
 
-use App\Modules\Catalog\Domain\ProductStatus;
+use App\Modules\Catalog\Domain\Enums\ProductStatus;
 use App\Modules\Catalog\Domain\Repository\ProductRepositoryInterface;
 use App\Modules\Catalog\Infrastructure\Product;
 use Illuminate\Pagination\LengthAwarePaginator;

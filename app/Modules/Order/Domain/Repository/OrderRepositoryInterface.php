@@ -7,7 +7,7 @@ namespace App\Modules\Order\Domain\Repository;
 use App\Modules\Order\Infrastructure\Models\Order;
 use App\Modules\Order\Infrastructure\Models\OrderItem;
 use App\Modules\Order\Infrastructure\Models\SubOrder;
-use App\Modules\SharedKernel\Domain\Currency;
+use App\Modules\SharedKernel\Domain\ValueObjects\Currency;
 use Illuminate\Support\Collection;
 
 interface OrderRepositoryInterface

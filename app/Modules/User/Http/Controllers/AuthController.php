@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Modules\User\Http;
+namespace App\Modules\User\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;

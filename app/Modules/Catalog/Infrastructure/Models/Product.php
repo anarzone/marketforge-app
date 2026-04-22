@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Modules\Catalog\Infrastructure;
 
-use App\Modules\Catalog\Domain\ProductStatus;
-use App\Modules\SharedKernel\Domain\Currency;
+use App\Modules\Catalog\Domain\Enums\ProductStatus;
+use App\Modules\SharedKernel\Domain\ValueObjects\Currency;
 use Database\Factories\ProductFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

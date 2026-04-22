@@ -7,7 +7,7 @@ namespace App\Modules\Order\Infrastructure\Repository;
 use App\Modules\Order\Domain\Repository\CartRepositoryInterface;
 use App\Modules\Order\Infrastructure\Models\Cart;
 use App\Modules\Order\Infrastructure\Models\CartItem;
-use App\Modules\SharedKernel\Domain\Currency;
+use App\Modules\SharedKernel\Domain\ValueObjects\Currency;
 
 class EloquentCartRepository implements CartRepositoryInterface
 {
